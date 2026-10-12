@@ -1,0 +1,17 @@
+{
+  "name": "petnest",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ragn4r0ck/PetNest#readme",
+  "bugs": {
+    "url": "https://github.com/ragn4r0ck/PetNest/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ragn4r0ck/PetNest.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js"
+}
