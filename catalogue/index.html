@@ -7,5 +7,137 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main>
+    <div class="back">
+      <h1>Boutique-Chiens</h1>
+      <p>Alimentation, accessoires, hygiène et jouets sélectionnés par notre équipe.</p>
+    </div>
+
+    <section class="Catalogue">
+      <aside class="filterCatalogue">
+        <div class="coco">
+          
+          <div class="button-j">
+            <h4>Animal</h4>
+            <button>Tous</button> <button>Chiens</button><br>
+            <button>Chats</button> <button>Ronjeur</button><br>
+            <button>Oiseaux</button> <button>Poissons</button>
+          </div>
+
+          <div class="frange">
+            <h3><label for="range">Prix</label></h3>
+            <input type="range" id="range" min="0" max="100">
+            <div class="ESPACE">
+              <p>0€</p>
+              <p>100€</p>
+            </div>
+          </div>
+
+        </div> 
+        
+        <button class="normal">Réinitialiser les filtres</button>
+      </aside>
+      <div class="catalogue-products">
+        
+        <div class="bar">
+          <span class="product-NUM">6 produits affichés (aria-live)</span>
+          <div class="sort-box">
+            <label for="sort">Trier par</label><br>
+            <select id="sort">
+              <option>Prix croissant</option>
+              <option>Prix décroissant</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card">
+        <div class="product-image">
+            <img src="Croquettes.jpg" alt="Photo produit">
+        </div>
+        <div class="product-info">
+            <h3>Croquettes saumon & riz</h3>
+            <div class="product-footer">
+                <span class="price">49,90 €</span>
+                <button class="btn-add">Ajouter</button>
+            </div>
+        </div>
+    </div>
+        <div class="product-card">
+        <div class="product-image">
+            <img src="images/paw.png" alt="Photo produit">
+        </div>
+        <div class="product-info">
+            <h3>Os à mâcher naturels x3</h3>
+            <div class="product-footer">
+                <span class="price">8,90 €</span>
+                <button class="btn-add">Ajouter</button>
+            </div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/paw.png" alt="Photo produit">
+        </div>
+        <div class="product-info">
+            <h3>Harnais réglable taille M</h3>
+            <div class="product-footer">
+                <span class="price">21,15 €</span>
+                <button class="btn-add">Ajouter</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/paw.png" alt="Photo produit">
+        </div>
+        <div class="product-info">
+            <h3>Panier déhoussable 80 cm</h3>
+            <div class="product-footer">
+                <span class="price">59,00 €</span>
+                <button class="btn-add">Ajouter</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <img src="images/paw.png" alt="Photo produit">
+        </div>
+        <div class="product-info">
+          <h3>Shampooing peaux</h3>
+          <div class="product-footer">
+            <span class="price">12,50 €</span>
+            <button class="btn-add" disabled>Ajouter</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/paw.png" alt="Photo produit">
+        </div>
+        <div class="product-info">
+          <h3>Balles lumineuses x2</h3>
+          <div class="product-footer">
+            <span class="price">9,90 €</span>
+            <button class="btn-add">Ajouter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="NUMBERS">
+          <button>&lt;</button>
+          <button class="NUMS">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>&gt;</button>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
 </body>
 </html>
