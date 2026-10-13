@@ -1,1 +1,6 @@
 /* Styles de la page Detail produit — proprietaire : Dev 2. */
+.produit-conteneur{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 100px;
+    text-align: left;
+}
