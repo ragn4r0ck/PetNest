@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PetNest - Détail produit</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="../assets/css/main.css">
-  
-
+  <link rel="stylesheet" href="../assets/css/main.css"> 
+</head>
+<body>
   <header class="site-header">
     <div class="container site-header-inner">
       <a href="index.html" class="logo" aria-label="PetNest - Accueil">
@@ -52,65 +52,65 @@
         <li><a href="services/#rendez-vous" class="btn btn--primary btn--block">Prendre RDV</a></li>
       </ul>
     </nav>
-  </header>
-</head>
-<body>
-  <section class="produit">
-    <div class="produit-image-conteneur">
+  </header> 
+  <main>
+    <section class="produit">
+      <div class="produit-image-conteneur">
         <img src="/produit/Croquettes.jpg" alt="Sac Croquettes Ultra Premium Direct" class="image-principale">
-    </div>
+      </div>
     
-    <div class="produit-conteneur">
-      <h2>Croquettes saumon & riz 10 kg</h2>
-      <div class="prix">
-        <h4>49,90 €</h4> 
-        <h6>TTC · soit 4,99 € / kg</h6>
+      <div class="produit-conteneur">
+        <h2>Croquettes saumon & riz 10 kg</h2>
+        <div class="prix">
+          <h4>49,90 €</h4> 
+          <h6>TTC · soit 4,99 € / kg</h6>
+        </div>
+        <p>Recette rich en saumon frais pour chiens adults de toutes tailles. Sans colorant ni conservateur artificiel.</p>
+        <button>- 1 +</button> <button id="ajout">Ajouter au panier</button>
+        <p>✓ Livraision offerte dès 49 €</p>
+        <p>✓ Retour gratuit sous 30 jours</p>
+        <p>✓ Conseils personnalisés en boutique</p>
       </div>
-      <p>Recette rich en saumon frais pour chiens adults de toutes tailles. Sans colorant ni conservateur artificiel.</p>
-      <button>- 1 +</button> <button id="ajout">Ajouter au panier</button>
-      <p>✓ Livraision offerte dès 49 €</p>
-      <p>✓ Retour gratuit sous 30 jours</p>
-      <p>✓ Conseils personnalisés en boutique</p>
-    </div>
-  </section>
-  <section class="Avis">
-    <div>Avis(124)</div>
-    <div class="avis-conteneur">
-      <div class="avis-des-autres">
-        <h3>4,8</h3>
-        <p id="stars">★★★★★</p>
-        <p>Basé sur 124 avis</p>
-        <span id="avis1">★★★★★ Sara B - 12 octobre 2026</span>
-        <p>Mon chien adore et son pelage est plus brillant. Livraison rapide.</p>
-        <span id="avis2">★★★★★ Youssef A - 3 octobre 2026</span>
-        <p>Bonne qualité, grand format pratique. Le sac pourrait etre refermable.</p>
+    </section>
+    <section class="Avis">
+      <div>Avis(124)</div>
+      <div class="avis-conteneur">
+        <div class="avis-des-autres">
+          <h3>4,8</h3>
+          <p id="stars">★★★★★</p>
+          <p>Basé sur 124 avis</p>
+          <span id="avis1">★★★★★ Sara B - 12 octobre 2026</span>
+          <p>Mon chien adore et son pelage est plus brillant. Livraison rapide.</p>
+          <span id="avis2">★★★★★ Youssef A - 3 octobre 2026</span>
+          <p>Bonne qualité, grand format pratique. Le sac pourrait etre refermable.</p>
+        </div>
+        <div class="tonavis-conteneur">
+          <h3>Laisser un avis</h3>
+
+          <form>
+            <label for="note">Votre note *</label>
+              <select id="note" name="note" required>
+              <option value="">Choisir une note</option>
+              <option value="5">★★★★★ - Excellent</option>
+              <option value="4">★★★★ - Très bien</option>
+              <option value="3">★★★ - Bien</option>
+              <option value="2">★★ - Moyen</option>
+              <option value="1">★ - Mauvais</option>
+              </select>
+
+            <label for="titre">Titre de l'avis *</label>
+            <input type="text" id="titre" name="titre" placeholder="Ex. Excellent rapport qualité-prix" required>
+
+            <label for="commentaire">Votre commentaire *</label>
+            <textarea id="commentaire" name="commentaire" placeholder="Partagez votre expérience..." required></textarea>
+
+            <button type="submit">Publier mon avis</button>
+          </form>
+
+        </div>
       </div>
-      <div class="tonavis-conteneur">
-        <h3>Laisser un avis</h3>
-
-        <form>
-          <label for="note">Votre note *</label>
-            <select id="note" name="note" required>
-            <option value="">Choisir une note</option>
-            <option value="5">★★★★★ - Excellent</option>
-            <option value="4">★★★★ - Très bien</option>
-            <option value="3">★★★ - Bien</option>
-            <option value="2">★★ - Moyen</option>
-            <option value="1">★ - Mauvais</option>
-            </select>
-
-          <label for="titre">Titre de l'avis *</label>
-          <input type="text" id="titre" name="titre" placeholder="Ex. Excellent rapport qualité-prix" required>
-
-          <label for="commentaire">Votre commentaire *</label>
-          <textarea id="commentaire" name="commentaire" placeholder="Partagez votre expérience..." required></textarea>
-
-          <button type="submit">Publier mon avis</button>
-        </form>
-
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
