@@ -1,6 +1,219 @@
 /* Styles de la page Detail produit — proprietaire : Dev 2. */
-.produit-conteneur{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 100px;
-    text-align: left;
+/*Base*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #1c1917;
+  background: #fff;
+  line-height: 1.5;
+}
+
+/*Section produit*/
+.produit {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+
+.produit-image-conteneur{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 301px;
+}
+.image-principale {
+  border-radius: 16px;
+  max-width: 576px;
+  max-height: 301px;
+  object-fit: contain;
+}
+.produit-conteneur h2 {
+  font-size: 32px;
+  line-height: 1.15;
+  margin: 0 0 12px;
+}
+
+.produit-conteneur h4 {
+  display: inline;
+  font-size: 26px;
+  margin: 0 8px 0 0;
+}
+
+.produit-conteneur h6{
+    font-size: xx-small;
+    margin-top: 18px;
+}
+
+.prix{
+   display: flex;
+   flex-direction: row;
+}
+
+.produit-conteneur p {
+  font-size: 14px;
+  color: #6b6560;
+  margin: 12px 0;
+}
+
+/* boutons quantité + panier */
+.produit-conteneur button {
+  font-size: 14px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #e7e3df;
+  background: #fff;
+  color: #1c1917;
+}
+
+#ajout {
+  background: #c4400c;
+  border-color: #c4400c;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 40px;
+}
+
+#ajout:hover {
+  background: #a33509;
+}
+
+
+/*Section avis*/
+.Avis {
+  background: #faf9f7;
+  padding: 40px 20px 60px;
+}
+
+.Avis > div:first-child {
+  max-width: 1080px;
+  margin: 0 auto 24px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e7e3df;
+  color: #c4400c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.avis-conteneur {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.avis-des-autres h3 {
+  font-size: 36px;
+  margin: 0;
+}
+
+#stars{
+
+}
+
+.avis-des-autres span {
+  display: block;
+  margin-top: 16px;
+  padding: 12px 16px 0;
+  background: #fff;
+  border: 1px solid #e7e3df;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  font-size: 12px;
+  color: #6b6560;
+}
+
+.avis-des-autres span + p {
+  margin: 0;
+  padding: 4px 16px 14px;
+  background: #fff;
+  border: 1px solid #e7e3df;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  font-size: 14px;
+}
+
+/* ---------- Formulaire ---------- */
+.tonavis-conteneur {
+  background: #fff;
+  border: 1px solid #e7e3df;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.tonavis-conteneur h3 {
+  margin: 0 0 16px;
+  font-size: 16px;
+}
+
+form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 16px 0 6px;
+}
+
+form select,
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 14px;
+  border: 1px solid #cfc9c3;
+  border-radius: 8px;
+  background: #fff;
+}
+
+form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+form select:focus,
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #c4400c;
+}
+
+/* état erreur (rouge) quand le champ est invalide après saisie */
+form textarea:user-invalid {
+  border-color: #dc2626;
+  background: #fff1f1;
+}
+
+form button[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #c4400c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background: #a33509;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 800px) {
+  .produit,
+  .avis-conteneur {
+    grid-template-columns: 1fr;
+  }
 }
