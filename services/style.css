@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: "Inter", sans-serif;;
+    overflow-x: hidden;
 }
 .services{
   background-color: #FFF4ED;
@@ -163,5 +164,20 @@ padding-top:  100px;
   justify-content: center;
   text-align: center;
   margin: 0;
-  padding: -200px;
+  color: #1c1917;
+
+  position: relative;
+  bottom: 700px;
+  left: 400px;
+}
+
+.formulaire{
+position: relative;
+right: 400px;
+}
+
+.LOCA{
+  position: relative;
+  left: 1000px;
+  bottom: 600px;
 }
