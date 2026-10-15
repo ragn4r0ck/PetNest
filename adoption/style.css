@@ -154,6 +154,121 @@ body {
     margin-top: 14px;
     cursor: pointer;
 }
+
+
+
+/* Section du formulaire */
+
+.demande-adoption {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 8%;
+    background-color: white;
+}
+
+/* Texte a gauche */
+
+.texte-formulaire {
+    width: 35%;
+}
+
+.texte-formulaire span {
+    color: #C2410C;
+    font-size: 12px;
+}
+
+.texte-formulaire h2 {
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.texte-formulaire p {
+    color: #57534E;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Formulaire a droite */
+
+.formulaire {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #FAFAFA;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* Deux champs sur la meme ligne */
+
+.ligne-formulaire {
+    display: flex;
+    gap: 20px;
+}
+
+/* Chaque champ */
+
+.champ {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+}
+
+.champ label {
+    font-size: 13px;
+}
+
+.champ input,
+.champ select,
+.champ textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.champ textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+/* Case a cocher */
+
+.accord {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.accord input {
+    accent-color: #C2410C;
+}
+
+.accord label {
+    font-size: 12px;
+}
+
+/* Bouton */
+
+.formulaire button {
+    align-self: flex-start;
+    background-color: #C2410C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+
+
+/*footer*/
 .site-footer { background: var(--neutral-900); color: var(--neutral-100); }
 .footer-grid { display: grid; grid-template-columns: 1fr; gap: 32px; padding-block: 48px; }
 .footer-brand { margin: 0; font-family: var(--font-display); font-size: 18px; font-weight: 700; color: #fff; }
