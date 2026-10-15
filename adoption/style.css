@@ -57,6 +57,8 @@ body {
 .header-compact { display: flex; align-items: center; gap: 4px; }
 
 
+/* Section 1 : Adoption */
+
 .adoption {
     background-color: #effbf9;
     padding: 40px 8%;
@@ -83,7 +85,7 @@ body {
 
 .statistiques {
     display: flex;
-    gap:50px;
+    gap: 16px;
 }
 
 .carte {
@@ -105,7 +107,7 @@ body {
     line-height: 1.4;
 }
 
-/* Section 2*/
+/* Section 2 : Rocky */
 
 .adoption_rocky {
     background-color: #fafafa;
@@ -120,6 +122,7 @@ body {
 
 .image_adoption {
     width: 300px;
+    max-width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
@@ -155,9 +158,7 @@ body {
     cursor: pointer;
 }
 
-
-
-/* Section du formulaire */
+/* Section 3 : Formulaire */
 
 .demande-adoption {
     display: flex;
@@ -167,8 +168,6 @@ body {
     padding: 40px 8%;
     background-color: white;
 }
-
-/* Texte a gauche */
 
 .texte-formulaire {
     width: 35%;
@@ -190,10 +189,9 @@ body {
     line-height: 1.5;
 }
 
-/* Formulaire a droite */
-
 .formulaire {
     flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -202,19 +200,16 @@ body {
     border-radius: 15px;
 }
 
-/* Deux champs sur la meme ligne */
-
 .ligne-formulaire {
     display: flex;
     gap: 20px;
 }
 
-/* Chaque champ */
-
 .champ {
     display: flex;
     flex-direction: column;
     flex: 1;
+    min-width: 0;
     gap: 8px;
 }
 
@@ -238,8 +233,6 @@ body {
     resize: vertical;
 }
 
-/* Case a cocher */
-
 .accord {
     display: flex;
     align-items: center;
@@ -254,8 +247,6 @@ body {
     font-size: 12px;
 }
 
-/* Bouton */
-
 .formulaire button {
     align-self: flex-start;
     background-color: #C2410C;
@@ -266,7 +257,97 @@ body {
     cursor: pointer;
 }
 
+/* Adaptation aux tablettes et telephones */
 
+@media (max-width: 768px) {
+
+    /* Section 1 */
+
+    .adoption {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 5%;
+    }
+
+    .contenu h1 {
+        font-size: 24px;
+    }
+
+    .statistiques {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .carte {
+        flex: 1;
+        min-width: 90px;
+        width: auto;
+    }
+
+    /* Section 2 */
+
+    .adoption_rocky {
+        padding: 30px 5%;
+    }
+
+    .contenu_rocky {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .image_adoption {
+        width: 100%;
+        height: 220px;
+    }
+
+    .informations_rocky h1 {
+        font-size: 24px;
+    }
+
+    /* Section 3 */
+
+    .demande-adoption {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 5%;
+    }
+
+    .texte-formulaire {
+        width: 100%;
+    }
+
+    .formulaire {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .ligne-formulaire {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* Petits telephones */
+
+@media (max-width: 400px) {
+
+    .statistiques {
+        flex-direction: column;
+    }
+
+    .carte {
+        width: 100%;
+    }
+
+    .formulaire {
+        padding: 15px;
+    }
+
+    .formulaire button {
+        width: 100%;
+    }
+}
 
 /*footer*/
 .site-footer { background: var(--neutral-900); color: var(--neutral-100); }
