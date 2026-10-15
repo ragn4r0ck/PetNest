@@ -105,6 +105,22 @@ body {
   font-weight: 600;
 }
 
+#stars{
+  margin-top: -50px;
+  margin-left: 65px;
+}
+
+h3 + p{
+  padding: 2px;
+}
+
+p{
+  font-size: small;
+  margin-top: -15px;
+  margin-left: 65px;
+  padding: 2px;
+}
+
 .avis-conteneur {
   max-width: 1080px;
   margin: 0 auto;
@@ -119,9 +135,6 @@ body {
   margin: 0;
 }
 
-#stars{
-
-}
 
 .avis-des-autres span {
   display: block;
