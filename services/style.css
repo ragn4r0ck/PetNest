@@ -5,7 +5,13 @@ body{
 }
 .services{
   background-color: #FFF4ED;
-  padding: 48px 120px;
+  padding: 32px 20px;
+}
+
+@media (min-width: 900px){
+  .services{
+    padding: 48px 120px;
+  }
 }
 .index-1{
 
@@ -69,14 +75,12 @@ padding-top: 20px;
   background: #FFE4D3;
 }
 
-.container{
-  position:static
-}
+
 
 .formulaire {
   width: calc(100% - 40px);
   max-width: 700px;
-  margin: 32px auto;
+  margin: 0;
   padding: 28px;
   background: #F8F6F3;
   border-radius: 20px;
@@ -128,31 +132,33 @@ padding-top: 20px;
   cursor: pointer;
 }
 
-* { box-sizing: border-box; }
 
-.container {
+
+
+
+
+.faq{
   display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap: 48px;
+  grid-template-columns: 1fr;
+  gap: 28px;
   align-items: start;
-  padding: 48px clamp(20px, 8vw, 120px);
+  padding: 32px clamp(20px, 8vw, 120px);
   background: #FAF8F6;
 }
-#coco{
-  transform: translateX(225px);
-}
 
-@media (max-width: 900px) {
-  .container {
-    grid-template-columns: 1fr;
-    gap: 28px;
+@media (min-width: 900px){
+  .container{
+    grid-template-columns: 1fr 1.6fr;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 
 img{
   display: block;
-  margin: 100px;;
-padding-top:  100px;
+  max-width: 100%;
+  height: auto;
 }
 
 .boutique{
@@ -160,24 +166,57 @@ padding-top:  100px;
   border: solid 2px grey
 
 }
+* { box-sizing: border-box; }
+
 .social-media{
-  justify-content: center;
   text-align: center;
   margin: 0;
   color: #1c1917;
-
-  position: relative;
-  bottom: 700px;
-  left: 400px;
 }
 
 .formulaire{
-position: relative;
-right: 400px;
+  width: 100%;
+  max-width: 700px;
 }
 
-.LOCA{
-  position: relative;
-  left: 1000px;
-  bottom: 600px;
+.bas-page{
+  display: grid;
+  gap: 32px;
+  padding: 24px;
+}
+
+.LOCA iframe{
+  width: 100%;
+}
+
+@media (min-width: 900px){
+  .bas-page{
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 48px 120px;
+  }
+  .formulaire{
+    grid-row: span 2;
+  }
+}
+
+
+@media (min-width: 900px){
+  .bas-page{
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 48px 120px;
+  }
+  .formulaire{
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .bas-page > div:last-of-type{
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .LOCA{
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
