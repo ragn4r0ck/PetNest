@@ -53,6 +53,28 @@ body {
 .icon-btn:hover { background: var(--neutral-100); }
 .header-compact { display: flex; align-items: center; gap: 4px; }
 
+ /* Section 1 */
+
+    .adoption {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 5%;
+    }
+
+    .contenu h1 {
+        font-size: 24px;
+    }
+
+    .statistiques {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .carte {
+        flex: 1;
+        min-width: 90px;
+        width: auto;
+    }
 
 
 
