@@ -249,3 +249,40 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
   background: #a33509;
 }
+
+/* Tablette */
+
+@media (min-width: 768px) {
+  .produit {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .produit > * {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .avis-conteneur {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .avis-des-autres,
+  .tonavis-conteneur {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+  .produit {
+    gap: 24px;
+  }
+
+  .avis-conteneur {
+    gap: 32px;
+  }
+}
