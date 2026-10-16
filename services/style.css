@@ -12,3 +12,34 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.services {
+  background-color: #FFF4ED;
+  padding: 32px 20px;
+}
+
+.index-1 {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  color: hsl(23, 82%, 52%);
+}
+
+.index-2 {
+  margin: 0;
+  padding-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  color: #1c1917;
+  text-transform: uppercase;
+}
+
+.index-3 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 16px;
+  color: black;
+}
+
+@media (min-width: 900px) {
+  .services { padding: 48px 120px; }
+}
