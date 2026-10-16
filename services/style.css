@@ -166,19 +166,13 @@ img {
 @media (min-width: 900px) {
   .bas-page {
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "rdv boutique"
+      "rdv carte";
     align-items: start;
     padding: 48px 120px;
   }
-  .formulaire {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-  }
-  .social-media {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .LOCA {
-    grid-column: 2;
-    grid-row: 2;
-  }
+  .formulaire   { grid-area: rdv; }
+  .social-media { grid-area: boutique; }
+  .LOCA         { grid-area: carte; }
 }
