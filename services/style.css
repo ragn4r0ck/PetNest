@@ -1,1 +1,14 @@
-/* Styles de la page Services et contact — proprietaire : Dev 4. */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
