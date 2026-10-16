@@ -17,12 +17,27 @@
       <h1>Boutique-Chiens</h1>
       <p>Alimentation, accessoires, hygiène et jouets sélectionnés par notre équipe.</p>
     </div>
-  </main>
   <section class="Catalogue">
 
     <aside class="filterCatalogue">
+      <div class="button-j">
+    <h4>Animal</h4>
+    <button>Tous</button> <button>Chiens</button>
+    <button>Chats</button> <button>Rongeur</button>
+    <button>Oiseaux</button> <button>Poissons</button>
+  </div>
+
+  <div class="frange">
+    <h3><label for="range">Prix</label></h3>
+    <input type="range" id="range" min="0" max="100" value="100">
+    <div class="ESPACE">
+      <p>0 €</p>
+      <p>100 €</p>
+    </div>
+  </div>
+
       <button class="normal">Réinitialiser les filtres</button>
-    </aside>
+      </aside>
 
     <div class="catalogue-products"></div>
 

@@ -62,3 +62,31 @@ button.normal {
   padding: 0;
   text-align: left;
 }
+.button-j button {
+  padding: 6px 14px;
+  margin: 3px 2px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.button-j button:focus {
+  background-color: #EA580C;
+  color: white;
+  border-color: #EA580C;
+}
+
+.ESPACE {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  font-size: 14px;
+  width: 100%;
+}
+
+.frange input[type="range"] {
+  accent-color: #EA580C;
+}
