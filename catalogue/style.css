@@ -205,3 +205,26 @@ button.normal {
   background-color: #ddd;
   cursor: not-allowed;
 }
+.NUMBERS {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 40px 0 20px 0;
+  width: 100%;
+}
+
+.NUMBERS button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #eee;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #555;
+}
+
+.NUMBERS button:focus {
+  background-color: #EA580C;
+  color: white;
+}
