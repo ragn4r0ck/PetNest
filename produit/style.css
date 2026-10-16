@@ -1,1 +1,289 @@
 /* Styles de la page Detail produit — proprietaire : Dev 2. */
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #1c1917;
+  background: #fff;
+  line-height: 1.5;
+}
+
+/* Section produit — Mobile First */
+
+.produit {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+ 
+.image-principale {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+
+.miniatures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  gap: 8px;
+}
+
+.ss {
+  width: 100%;          
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.ss:first-child {
+  border: 3px solid #c2410c;
+}
+
+.produit-conteneur h2 {
+  font-size: 32px;
+  line-height: 1.15;
+  margin: 0 0 12px;
+}
+
+.produit-conteneur h4 {
+  display: inline;
+  font-size: 26px;
+  margin: 0 8px 0 0;
+}
+
+.produit-conteneur h6 {
+  font-size: xx-small;
+  margin-top: 18px;
+}
+
+.prix {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.produit-conteneur span {
+  color: green;
+}
+
+.produit-conteneur p {
+  font-size: 14px;
+  color: #6b6560;
+  margin: 12px 0;
+}
+
+/* Boutons quantité + panier */
+
+.produit-conteneur button {
+  font-size: 14px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #e7e3df;
+  background: #fff;
+  color: #1c1917;
+}
+
+#ajout {
+  background: #c4400c;
+  border-color: #c4400c;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 40px;
+}
+
+#ajout:hover {
+  background: #a33509;
+}
+
+/* Section avis */
+ 
+.Avis {
+  background: #faf9f7;
+  padding: 40px 20px 60px;
+}
+
+.Avis > div:first-child {
+  max-width: 1080px;
+  margin: 0 auto 24px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e7e3df;
+  color: #c4400c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rating {
+  margin-top: -50px;
+  margin-left: 65px;
+  color: #ffb400;
+}
+
+h3 + div {
+  padding: 2px;
+}
+
+p {
+  font-size: small;
+  margin-top: -9px;
+  margin-left: 65px;
+  padding: 2px;
+}
+
+.avis-conteneur {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.avis-des-autres,
+.tonavis-conteneur {
+  width: 100%;
+  min-width: 0;
+}
+
+.avis-des-autres h3 {
+  font-size: 36px;
+  margin: 0;
+} 
+
+.avis-des-autres span {
+  display: block;
+  margin-top: 16px;
+  padding: 12px 16px 0;
+  background: #fff;
+  border: 1px solid #e7e3df;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  font-size: 12px;
+  color: #6b6560;
+}
+
+.avis-des-autres span + p {
+  margin: 0;
+  padding: 4px 16px 14px;
+  background: #fff;
+  border: 1px solid #e7e3df;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  font-size: 14px;
+}
+
+/* Formulaire */
+
+.tonavis-conteneur {
+  background: #fff;
+  border: 1px solid #e7e3df;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.tonavis-conteneur h3 {
+  margin: 0 0 16px;
+  font-size: 16px;
+}
+
+form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 16px 0 6px;
+}
+
+form select,
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 14px;
+  border: 1px solid #cfc9c3;
+  border-radius: 8px;
+  background: #fff;
+}
+
+form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+form select:focus,
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #c4400c;
+} 
+ 
+form textarea:user-invalid {
+  border-color: #dc2626;
+  background: #fff1f1;
+}
+
+form button[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #c4400c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background: #a33509;
+}
+
+/* Tablette */
+
+@media (min-width: 768px) {
+  .produit {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .produit > * {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .avis-conteneur {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .avis-des-autres,
+  .tonavis-conteneur {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+  .produit {
+    gap: 24px;
+  }
+
+  .avis-conteneur {
+    gap: 32px;
+  }
+  
+}
