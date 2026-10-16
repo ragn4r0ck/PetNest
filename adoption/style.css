@@ -96,6 +96,28 @@ body {
         font-size: 24px;
     }
 
+   /* Section 3 */
+
+    .demande-adoption {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 5%;
+    }
+
+    .texte-formulaire {
+        width: 100%;
+    }
+
+    .formulaire {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .ligne-formulaire {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
 
 
 
