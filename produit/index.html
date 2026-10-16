@@ -92,6 +92,30 @@
           <p>Bonne qualité, grand format pratique. Le sac pourrait etre refermable.</p>
         </div>
       </div>
+      <div class="tonavis-conteneur">
+          <h3>Laisser un avis</h3>
+
+          <form>
+            <label for="note">Votre note *</label>
+              <select id="note" name="note" required>
+              <option value="">Choisir une note</option>
+              <option value="5">★★★★★ - Excellent</option>
+              <option value="4">★★★★ - Très bien</option>
+              <option value="3">★★★ - Bien</option>
+              <option value="2">★★ - Moyen</option>
+              <option value="1">★ - Mauvais</option>
+              </select>
+
+            <label for="titre">Titre de l'avis *</label>
+            <input type="text" id="titre" name="titre" placeholder="Ex. Excellent rapport qualité-prix" required>
+
+            <label for="commentaire">Votre commentaire *</label>
+            <textarea id="commentaire" name="commentaire" placeholder="Partagez votre expérience..." required></textarea>
+
+            <button type="submit">Publier mon avis</button>
+          </form>
+
+      </div>
     </section>
   </main>
   <footer class="site-footer">
