@@ -151,3 +151,13 @@ img {
   font: inherit;
   cursor: pointer;
 }
+
+/* ---------- Contact et carte ---------- */
+.social-media {
+  text-align: center;
+  color: #1c1917;
+}
+
+.LOCA iframe {
+  width: 100%;
+}
