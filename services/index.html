@@ -100,6 +100,40 @@
         </div>
       </div>
     </section>
+
+        <section class="bas-page">
+      <div class="formulaire" id="rendez-vous">
+        <h2>Prendre rendez-vous</h2>
+        <form>
+          <div class="a1">
+            <label for="name">Nom complet *</label>
+            <input type="text" id="name" name="name" placeholder="Ex. Sara Benali" required>
+          </div>
+          <div class="a1">
+            <label for="email">Adresse e-mail *</label>
+            <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+          </div>
+          <div class="a1">
+            <label for="service">Service *</label>
+            <select id="service" name="service" required>
+              <option>Toilettage</option>
+              <option>Pension</option>
+              <option>Conseil</option>
+            </select>
+          </div>
+          <div class="a1">
+            <label for="date">Date souhaitée *</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="a1">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4" placeholder="Race, taille et besoins particuliers de votre animal..." required></textarea>
+          </div>
+          <button id="coco" type="submit">Envoyer la demande</button>
+        </form>
+      </div>
+      <!-- contact + carte : commit 5 -->
+    </section>
   </main>
 
   <footer class="site-footer">
