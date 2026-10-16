@@ -1,1 +1,11 @@
 /* Styles de la page Catalogue — proprietaire : Dev 2. */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+button {
+  border-radius: 10px;
+  cursor: pointer;
+}
