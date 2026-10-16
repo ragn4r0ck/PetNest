@@ -131,3 +131,77 @@ button.normal {
   font-size: 14px;
   cursor: pointer;
 }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.product-card {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #E7E5E4;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  background-color: #FAFAF9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.product-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-info h3 {
+  line-height: 24px;
+  width: 100%;
+  margin: 0 0 20px 0;
+  font-size: 16px;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.btn-add {
+  padding: 6px 14px;
+  color: #FFFFFF;
+  background-color: #EA580C;
+  border: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-add:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
