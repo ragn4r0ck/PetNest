@@ -75,6 +75,26 @@ body {
         min-width: 90px;
         width: auto;
     }
+ /* Section 2 */
+
+    .adoption_rocky {
+        padding: 30px 5%;
+    }
+
+    .contenu_rocky {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .image_adoption {
+        width: 100%;
+        height: 220px;
+    }
+
+    .informations_rocky h1 {
+        font-size: 24px;
+    }
 
 
 
