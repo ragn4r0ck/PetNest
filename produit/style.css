@@ -184,3 +184,68 @@ p {
   border-radius: 0 0 10px 10px;
   font-size: 14px;
 }
+
+/* Formulaire */
+
+.tonavis-conteneur {
+  background: #fff;
+  border: 1px solid #e7e3df;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.tonavis-conteneur h3 {
+  margin: 0 0 16px;
+  font-size: 16px;
+}
+
+form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 16px 0 6px;
+}
+
+form select,
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 14px;
+  border: 1px solid #cfc9c3;
+  border-radius: 8px;
+  background: #fff;
+}
+
+form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+form select:focus,
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #c4400c;
+} 
+ 
+form textarea:user-invalid {
+  border-color: #dc2626;
+  background: #fff1f1;
+}
+
+form button[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #c4400c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background: #a33509;
+}
