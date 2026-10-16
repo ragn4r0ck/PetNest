@@ -1,1 +1,54 @@
 /* Styles de la page Adoption — proprietaire : Dev 3. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid var(--neutral-200);
+}
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 64px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: inherit;
+}
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--primary-600);
+  color: #fff;
+}
+.main-nav { display: none; align-items: center; gap: 24px; }
+.main-nav a { text-decoration: none; font-size: 14px; color: var(--neutral-700); }
+.main-nav a:hover { color: var(--primary-600); }
+.main-nav a[aria-current="page"] { color: var(--primary-600); font-weight: 600; }
+.header-actions { display: none; align-items: center; gap: 12px; }
+.icon-btn {
+  padding: 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  color: inherit;
+}
+.icon-btn:hover { background: var(--neutral-100); }
+.header-compact { display: flex; align-items: center; gap: 4px; }
