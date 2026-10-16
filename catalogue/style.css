@@ -228,3 +228,87 @@ button.normal {
   background-color: #EA580C;
   color: white;
 }
+@media (max-width: 700px) {
+
+  .back {
+    padding: 20px 16px;
+  }
+
+  .back h1 {
+    font-size: 22px;
+    margin: 0 0 8px 0;
+  }
+
+  .Catalogue {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .filterCatalogue {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .catalogue-products {
+    width: 100%;
+    flex: none;
+  }
+
+  .top-sort {
+    justify-content: flex-start;
+    margin: 0 0 10px 0;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .product-info {
+    padding: 16px;
+  }
+
+  .frange {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .frange input[type="range"] {
+    width: 100%;
+  }
+
+  button.normal {
+    display: block;
+    margin: 16px auto 0 auto;
+  }
+
+  .button-j {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .button-j h4 {
+    width: 100%;
+    margin: 0 0 8px 0;
+  }
+
+  .product-NUM {
+    font-size: 14px;
+  }
+
+  .NUMBERS {
+    margin: 30px 0;
+  }
+
+  .NUMBERS button {
+    width: 36px;
+    height: 36px;
+  }
+}
