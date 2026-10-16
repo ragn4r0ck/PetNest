@@ -10,138 +10,148 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <body>
-
-  <main>
+    <main>
     <div class="back">
       <h1>Boutique-Chiens</h1>
       <p>Alimentation, accessoires, hygiène et jouets sélectionnés par notre équipe.</p>
     </div>
-  <section class="Catalogue">
 
-    <aside class="filterCatalogue">
-      <div class="button-j">
-    <h4>Animal</h4>
-    <button>Tous</button> <button>Chiens</button>
-    <button>Chats</button> <button>Rongeur</button>
-    <button>Oiseaux</button> <button>Poissons</button>
-  </div>
+    <section class="Catalogue">
 
-  <div class="frange">
-    <h3><label for="range">Prix</label></h3>
-    <input type="range" id="range" min="0" max="100" value="100">
-    <div class="ESPACE">
-      <p>0 €</p>
-      <p>100 €</p>
-    </div>
-  </div>
+      <aside class="filterCatalogue">
+        <div class="coco">
 
-      <button class="normal">Réinitialiser les filtres</button>
+          <div class="button-j">
+            <h4>Animal</h4>
+            <button>Tous</button> <button>Chiens</button>
+            <button>Chats</button> <button>Rongeur</button>
+            <button>Oiseaux</button> <button>Poissons</button>
+          </div>
+
+          <div class="frange">
+            <h3><label for="range">Prix</label></h3>
+            <input type="range" id="range" min="0" max="100" value="100">
+            <div class="ESPACE">
+              <p>0 €</p>
+              <p>100 €</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="normal">Réinitialiser les filtres</button>
       </aside>
 
-    <div class="catalogue-products">
-      <div class="top-sort">
-    <div class="sort-box">
-      <label for="sort">Trier par</label>
-      <select id="sort">
-        <option>Prix croissant</option>
-        <option>Prix décroissant</option>
-      </select>
-    </div>
-  </div>
+      <div class="catalogue-products">
 
-  <div class="bar">
-    <span class="product-NUM">6 produits affichés (aria-live)</span>
-  </div>
-    </div>
-    <div class="product-grid">
+        <div class="top-sort">
+          <div class="sort-box">
+            <label for="sort">Trier par</label>
+            <select id="sort">
+              <option>Prix croissant</option>
+              <option>Prix décroissant</option>
+            </select>
+          </div>
+        </div>
 
-  <div class="product-card">
-    <div class="product-image">
-      <img src="Croquettes.jpg" alt="Croquettes saumon & riz">
-    </div>
-    <div class="product-info">
-      <h3>Croquettes saumon & riz</h3>
-      <div class="product-footer">
-        <span class="price">49,90 €</span>
-        <button class="btn-add">Ajouter</button>
+        <div class="bar">
+          <span class="product-NUM">6 produits affichés (aria-live)</span>
+        </div>
+
+        <div class="product-grid">
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="Croquettes.jpg" alt="Croquettes saumon & riz">
+              <a href="../produit/index.html"></a>
+            </div>
+            <div class="product-info">
+              <h3>Croquettes saumon & riz</h3>
+              <div class="product-footer">
+                <span class="price">49,90 €</span>
+                <button class="btn-add">Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="logodog.jpg" alt="Os à mâcher naturels">
+            </div>
+            <div class="product-info">
+              <h3>Os à mâcher naturels x3</h3>
+              <div class="product-footer">
+                <span class="price">8,90 €</span>
+                <button class="btn-add">Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="imgaedog.jpg" alt="Harnais réglable">
+            </div>
+            <div class="product-info">
+              <h3>Harnais réglable taille M</h3>
+              <div class="product-footer">
+                <span class="price">21,15 €</span>
+                <button class="btn-add">Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="imagePanier.jpg" alt="Panier déhoussable">
+            </div>
+            <div class="product-info">
+              <h3>Panier déhoussable 80 cm</h3>
+              <div class="product-footer">
+                <span class="price">59,00 €</span>
+                <button class="btn-add">Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="imageshampoing.jpg" alt="Shampooing peaux">
+            </div>
+            <div class="product-info">
+              <h3>Shampooing peaux</h3>
+              <div class="product-footer">
+                <span class="price">12,50 €</span>
+                <button class="btn-add" disabled>Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="imageballes.jpg" alt="Balles lumineuses">
+            </div>
+            <div class="product-info">
+              <h3>Balles lumineuses x2</h3>
+              <div class="product-footer">
+                <span class="price">9,90 €</span>
+                <button class="btn-add">Ajouter</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="NUMBERS">
+          <button>&lt;</button>
+          <button class="NUMS">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>&gt;</button>
+        </div>
+
       </div>
-    </div>
-  </div>
 
-  <div class="product-card">
-    <div class="product-image">
-      <img src="logodog.jpg" alt="Os à mâcher">
-    </div>
-    <div class="product-info">
-      <h3>Os à mâcher naturels x3</h3>
-      <div class="product-footer">
-        <span class="price">8,90 €</span>
-        <button class="btn-add">Ajouter</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="product-card">
-    <div class="product-image">
-      <img src="imgaedog.jpg" alt="Harnais">
-    </div>
-    <div class="product-info">
-      <h3>Harnais réglable taille M</h3>
-      <div class="product-footer">
-        <span class="price">21,15 €</span>
-        <button class="btn-add">Ajouter</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="product-card">
-    <div class="product-image">
-      <img src="imagePanier.jpg" alt="Panier">
-    </div>
-    <div class="product-info">
-      <h3>Panier déhoussable 80 cm</h3>
-      <div class="product-footer">
-        <span class="price">59,00 €</span>
-        <button class="btn-add">Ajouter</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="product-card">
-    <div class="product-image">
-      <img src="imageshampoing.jpg" alt="Shampooing">
-    </div>
-    <div class="product-info">
-      <h3>Shampooing peaux</h3>
-      <div class="product-footer">
-        <span class="price">12,50 €</span>
-        <button class="btn-add" disabled>Ajouter</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="product-card">
-    <div class="product-image">
-      <img src="imageballes.jpg" alt="Balles">
-    </div>
-    <div class="product-info">
-      <h3>Balles lumineuses x2</h3>
-      <div class="product-footer">
-        <span class="price">9,90 €</span>
-        <button class="btn-add">Ajouter</button>
-      </div>
-    </div>
-  </div>
-
-</div>
-    <div class="NUMBERS">
-  <button>&lt;</button>
-  <button class="NUMS">1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>&gt;</button>
-</div>
-  </section>
+    </section>
+  </main>
 </body>
 </html>
