@@ -117,7 +117,27 @@ body {
         flex-direction: column;
         gap: 16px;
     }
+  /* Petits telephones */
+
+@media (max-width: 400px) {
+
+    .statistiques {
+        flex-direction: column;
+    }
+
+    .carte {
+        width: 100%;
+    }
+
+    .formulaire {
+        padding: 15px;
+    }
+
+    .formulaire button {
+        width: 100%;
+    }
 }
+
 
 
 
