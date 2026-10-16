@@ -26,41 +26,32 @@
     }
   });
 })();
-// Recuperer le formulaire dans le HTML
-const formulaire = document.querySelector(".formulaire");
+// Le formulaire d'adoption n'existe que sur la page adoption.
+var formulaire = document.querySelector("form.formulaire");
 
-// Recuperer le champ du nom
-const nom = document.querySelector("#nom");
+if (formulaire) {
+  var nom = formulaire.querySelector("#nom");
+  var email = formulaire.querySelector("#email");
 
-// Recuperer le champ email
-const email = document.querySelector("#email");
+  // Vérifier la présence des champs avant d'ajouter la validation.
+  if (nom && email) {
+    formulaire.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-// Recuperer le bouton d'envoi
-const bouton = document.querySelector(".formulaire button");
-
-// Executer le code quand on envoie le formulaire
-formulaire.addEventListener("submit", function(event) {
-
-    // Empecher le rechargement de la page
-    event.preventDefault();
-
-    // Verifier si le nom est vide
-    if (nom.value.trim() === "") {
+      if (nom.value.trim() === "") {
         alert("Veuillez saisir votre nom.");
         nom.focus();
         return;
-    }
+      }
 
-    // Verifier si l'email est valide
-    if (!email.checkValidity()) {
+      if (!email.checkValidity()) {
         alert("Veuillez saisir une adresse email valide.");
         email.focus();
         return;
-    }
+      }
 
-    // Afficher un message de confirmation
-    alert("Votre demande d'adoption a ete envoyee avec succes !");
-
-    // Vider les champs du formulaire
-    formulaire.reset();
-});
+      alert("Votre demande d'adoption a ete envoyee avec succes !");
+      formulaire.reset();
+    });
+  }
+}
